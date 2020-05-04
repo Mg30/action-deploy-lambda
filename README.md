@@ -1,3 +1,3 @@
 # deploy-lambda
 
-github action to deploy to lambda
+github action to deploy to AWS lambda 
