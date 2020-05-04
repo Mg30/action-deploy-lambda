@@ -1,0 +1,16 @@
+name: 'lambda-deploy'
+description: 'allow deployement node js to lambda'
+inputs:
+  bucket-name:  
+    description: 'the s3 bucket to upload dependencies'
+    required: true
+  function-name:
+    description: 'the lambda function name to deploy code to'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.bucket-name }}
+    - ${{ inputs.function-name }}
