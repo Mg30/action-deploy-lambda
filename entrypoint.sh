@@ -1,4 +1,4 @@
-# /bin/sh
+#!/bin/sh
 
 npm install
 zip  -r lambda-package.zip $INPUT_FILES
