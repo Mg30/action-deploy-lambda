@@ -1,3 +1,4 @@
-# deploy-lambda
+# github action to update a lambda express app
 
-github action to deploy to AWS lambda 
+## Requirements
+The infrastruture must be deployed an AWS in order to use
