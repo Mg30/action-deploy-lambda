@@ -12,6 +12,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{inputs.excluded_files}}
+    - ${{inputs.files}}
     - ${{ inputs.bucket_name }}
     - ${{ inputs.function_name }}
